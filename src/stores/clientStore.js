@@ -2,10 +2,21 @@ import { observable } from 'mobx'
 
 import Client from './client'
 
+const storageKey = 'HiGuysJSTest::clients'
+
 class ClientStore {
 
   @observable list = []
   @observable client = undefined
+
+  constructor() {
+    try {
+      const data = localStorage.getItem(storageKey)
+      this.list = JSON.parse(data) || []
+    } catch (e) {
+      this.list = []
+    }
+  }
 
   create = () => {
     if (!this.client) {
@@ -27,12 +38,16 @@ class ClientStore {
         console.log('index', this.list)
       }
       this.client = undefined
+
+      this.store()
     }
   }
 
   edit = (client) => {
     if (client) {
       this.client = { ...client }
+
+      this.store()
     }
   }
 
@@ -40,7 +55,14 @@ class ClientStore {
     const i = this.list.findIndex((client) => client.id === id)
     if (i !== -1) {
       this.list.splice(i, 1)
+
+      this.store()
     }
+  }
+
+  store() {
+    const data = JSON.stringify(this.list)
+    localStorage.setItem(storageKey, data)
   }
 }
 

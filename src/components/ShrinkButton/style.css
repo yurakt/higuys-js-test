@@ -8,3 +8,7 @@
     color: dimgrey;
     cursor: pointer;
 }
+
+.ShrinkButton div {
+    padding: 20px 0;
+}

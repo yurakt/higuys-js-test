@@ -1,5 +1,6 @@
 {
   "name": "jstest",
+  "homepage" : "http://btrspace.com/higuys-js-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
