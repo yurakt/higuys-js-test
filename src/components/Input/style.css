@@ -1,0 +1,16 @@
+.Input {
+    /*text-align: left;*/
+}
+
+.Input label {
+    color: grey;
+}
+
+.Input input {
+    border: 1px solid #DFDFDF;
+    border-radius: 20px;
+    /*background-color: #C32630;*/
+    padding: 10px 15px;
+    color: dimgrey;
+    outline: none;
+}

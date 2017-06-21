@@ -1,0 +1,10 @@
+.ShrinkButton {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.ShrinkButton:hover {
+    color: dimgrey;
+    cursor: pointer;
+}
