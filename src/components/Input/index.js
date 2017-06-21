@@ -1,9 +1,12 @@
 import React from 'react'
 import './style.css'
 
-const Input = ({ label, value, onChange }) => {
+const Input = ({ className, label, value, onChange }) => {
+
+  const classes = className + ' Input'
+
   return (
-    <div className='Input'>
+    <div className={classes}>
       <label>{label}</label>
       <br/>
       <input
@@ -12,8 +15,8 @@ const Input = ({ label, value, onChange }) => {
         value={value}
         onChange={(e) => {
           onChange(e.target.value)
-        }
-        }/>
+        }}
+      />
     </div>
   )
 }

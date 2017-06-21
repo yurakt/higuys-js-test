@@ -35,10 +35,20 @@ class NewClient extends React.Component {
         </div>
         {client
           ? <div>
-            <Input label={'Имя'} value={client.name} onChange={(value) => client.name = value}/>
-            <Input label={'Телефон'} value={client.phone} onChange={(value) => client.phone = value}/>
-            <Input label={'E-mail'} value={client.email} onChange={(value) => client.email = value}/>
-            <Button name='Сохранить' onClick={this.save}/>
+            <div className='NewClientForm'>
+              <div className='row'>
+                <Input className='col fl-3' label={'Имя'} value={client.name} onChange={(value) => client.name = value}/>
+                <Input className='col fl-2' label={'Телефон'} value={client.phone}
+                       onChange={(value) => client.phone = value}/>
+              </div>
+              <div className='row'>
+                <Input className='col fl-3' label={'E-mail'} value={client.email}
+                       onChange={(value) => client.email = value}/>
+                <div className='col fl-2'>
+                  <Button name='Сохранить' onClick={this.save}/>
+                </div>
+              </div>
+            </div>
             <ShrinkButton onClick={this.close}/>
           </div>
           : null}

@@ -5,6 +5,7 @@
     color: white;
     padding: 10px 20px;
     outline: none;
+    font-weight: bolder;
 }
 
 .Button:hover {

@@ -8,11 +8,11 @@ const Header = () => {
 
   let titles = Object.values(clientFields).map((item, i) => {
     return (
-      <div key={i}>{item}</div>
+      <div className='fl-1' key={i}>{item}</div>
     )
   })
 
-  titles = [<div key={-1}></div>, ...titles]
+  titles = [<div className='firstCol' key={-1}></div>, ...titles]
 
   return (
     <div className='ClientListHeader'>

@@ -1,9 +1,6 @@
-.Input {
-    /*text-align: left;*/
-}
-
 .Input label {
     color: grey;
+    font-size: 9pt;
 }
 
 .Input input {
@@ -11,6 +8,8 @@
     border-radius: 20px;
     /*background-color: #C32630;*/
     padding: 10px 15px;
+    margin-top: 6px;
     color: dimgrey;
     outline: none;
+    width: 90%;
 }

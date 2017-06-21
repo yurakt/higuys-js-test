@@ -11,7 +11,7 @@ export default class Client extends React.Component {
 
     return (
       <div className='Client'>
-        <div>
+        <div className='firstCol'>
           <span className='button' onClick={() => edit(client)}>
             <i className='fa fa-pencil' aria-hidden='true'></i>
           </span>

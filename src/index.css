@@ -20,3 +20,15 @@ i {
 .button:hover {
     color: dimgrey;
 }
+
+.fl-1 {
+    flex: 1;
+}
+
+.fl-2 {
+    flex: 2;
+}
+
+.fl-3 {
+    flex: 3;
+}

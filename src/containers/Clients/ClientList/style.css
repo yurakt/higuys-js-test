@@ -5,8 +5,9 @@
 .ClientListHeader {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     border-bottom: 2px solid #BD9CA4;
-    padding: 30px;
+    padding: 20px 10px;
     color: grey;
 }
 

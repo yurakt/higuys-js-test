@@ -14,3 +14,17 @@
     color: dimgrey;
     cursor: pointer;
 }
+
+.NewClientForm {
+    /*display: flex;*/
+    /*align-items: flex-end;*/
+}
+
+.NewClientForm .row {
+    display: flex;
+    align-items: flex-end;
+}
+
+.NewClientForm .col {
+    /*padding: 4px 14px;*/
+}
