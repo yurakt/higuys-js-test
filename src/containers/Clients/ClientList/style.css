@@ -1,0 +1,16 @@
+.ClientList {
+    padding: 10px;
+}
+
+.ClientListHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #BD9CA4;
+    padding: 30px;
+    color: grey;
+}
+
+.ClientListEmpty {
+    padding: 6px;
+    color: grey;
+}

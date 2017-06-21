@@ -1,3 +1,16 @@
 .NewClient {
-    padding: 0 20%
+    text-align: left;
+}
+
+.NewClient .icon {
+    margin-right: 10px;
+}
+
+.NewClientHeader {
+    display: inline-block;
+}
+
+.NewClientHeader:hover {
+    color: dimgrey;
+    cursor: pointer;
 }

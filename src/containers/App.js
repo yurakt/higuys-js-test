@@ -5,7 +5,7 @@ import Header from './Header'
 import NewClient from './NewClient'
 import Clients from './Clients'
 
-import store from 'stores/clients'
+import store from 'stores/clientStore.js'
 
 class App extends React.Component {
   render() {

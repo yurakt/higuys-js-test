@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .App {
     text-align: center;
-    padding: 20px;
+    padding: 0 20px;
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    width: 1000px;
+    background-color: #F7F7F7;
 }
